@@ -1,0 +1,137 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.snippets {
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.snippetRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.snippetBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.snippetBtn:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.snippetBtnActive {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.snippetNote {
+  margin: 0;
+  color: var(--text-faint);
+  font-size: 13px;
+}
+
+.navSection {
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navText {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.lessonLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lessonLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--accent);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.lessonLink:hover {
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.lessonLinkAll {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.lessonLinkAll:hover {
+  background: var(--accent);
+  color: #fff;
+}

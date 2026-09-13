@@ -1,0 +1,194 @@
+.theory {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.paragraph {
+  margin: 0;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text);
+  font-size: 19px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+
+.why {
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  padding: 12px 14px;
+}
+
+.syntax {
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+}
+
+.example {
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exampleTitle {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cardTitle,
+.mistakesTitle {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.cardText {
+  margin: 0 0 4px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.tip {
+  border-radius: var(--radius);
+  background: var(--success-soft);
+  border: 1px solid var(--success);
+  padding: 12px 14px;
+}
+
+.usage {
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mistakes {
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--danger);
+  padding: 12px 14px;
+}
+
+.mistakesList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.mistakeRow {
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mistakeCol {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.badBadge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 11px;
+}
+
+.goodBadge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--success-soft);
+  color: var(--success);
+  font-size: 11px;
+}
+
+.mistakeArrow {
+  flex-shrink: 0;
+  color: var(--text-faint);
+  font-size: 18px;
+}
+
+.mistakeCode {
+  margin: 0;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--code-bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.mistakeNote {
+  margin: 0;
+  width: 100%;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.infoList {
+  margin: 0;
+  padding: 0 0 0 18px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.infoList li {
+  margin-bottom: 6px;
+}
+
+.listCode {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: var(--code-bg);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.listText {
+  color: var(--text-muted);
+}

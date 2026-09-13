@@ -1,0 +1,35 @@
+:root {
+  /* Цвета */
+  --bg: #0b0f14;
+  --bg-soft: #111722;
+  --surface: #161d27;
+  --surface-2: #1c2430;
+  --surface-3: #232e3d;
+  --border: #2a3341;
+  --border-strong: #3b4657;
+  --text: #e6edf3;
+  --text-muted: #93a1b1;
+  --text-faint: #67717f;
+  --accent: #4d9fff;
+  --accent-strong: #2f7fff;
+  --accent-soft: rgba(77, 159, 255, 0.15);
+  --success: #3fb950;
+  --success-soft: rgba(63, 185, 80, 0.15);
+  --warning: #d29922;
+  --warning-soft: rgba(210, 153, 34, 0.15);
+  --danger: #f85149;
+  --danger-soft: rgba(248, 81, 73, 0.15);
+  --code-bg: #0d1117;
+  --header-h: 62px;
+
+  /* Типографика */
+  --font-ui: 'Segoe UI', system-ui, -apple-system, 'Apple Color Emoji', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', Consolas, 'Courier New', monospace;
+
+  /* Геометрия */
+  --radius: 10px;
+  --radius-sm: 6px;
+  --radius-lg: 16px;
+  --shadow-1: 0 1px 3px rgba(3, 8, 14, 0.5);
+  --shadow-2: 0 6px 18px rgba(3, 8, 14, 0.55);
+}

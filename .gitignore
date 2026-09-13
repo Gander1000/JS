@@ -1,0 +1,15 @@
+# Зависимости
+node_modules/
+
+# Результаты сборки
+dist/
+
+# Локальные файлы редактора
+.vscode/
+.idea/
+*.local
+
+# Логи и мусор
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,62 @@
+.block {
+  margin: 0;
+  border-radius: var(--radius-sm);
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.output {
+  background: var(--bg-soft);
+  border-color: var(--border-strong);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 10px;
+  color: var(--text-faint);
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.caption {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+}
+
+.copy {
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.copy:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.pre {
+  margin: 0;
+  padding: 12px 14px;
+  overflow: auto;
+  max-width: 100%;
+  font-size: 13px;
+  line-height: 1.55;
+  tab-size: 2;
+  white-space: pre;
+}
+
+.code {
+  font-family: var(--font-mono);
+  color: var(--text);
+}

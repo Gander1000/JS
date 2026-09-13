@@ -1,0 +1,105 @@
+/* ============================================================
+   Глобальные стили: сброс, типографика, базовые элементы
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(77, 159, 255, 0.3);
+}
+
+::-moz-selection {
+  background: rgba(77, 159, 255, 0.3);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-ui);
+  line-height: 1.3;
+}
+
+code,
+pre {
+  font-family: var(--font-mono);
+}
+
+/* Утилита: только для скринридеров */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Стилизация скроллбаров (WebKit / Firefox) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Типографика текста уроков */
+.prose p {
+  margin: 0 0 12px;
+}
+
+.prose strong {
+  color: var(--text);
+}

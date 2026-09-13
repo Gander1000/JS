@@ -1,0 +1,213 @@
+.page {
+  display: flex;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sidebarCol {
+  flex: 0 0 280px;
+  position: sticky;
+  top: var(--header-h);
+  align-self: flex-start;
+  max-height: calc(100vh - var(--header-h));
+  overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+  .sidebarCol {
+    display: none;
+  }
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.notFound {
+  max-width: 640px;
+  margin: 60px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notFound h1 {
+  margin: 0;
+  font-size: 26px;
+  color: var(--text);
+}
+
+.notFound p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.backLink:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-faint);
+  font-size: 13px;
+}
+
+.breadcrumbs a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.icon {
+  font-size: 38px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.headerText {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.description {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.lessonProgress {
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+}
+
+.toc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tocLabel {
+  color: var(--text-faint);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tocLink {
+  color: var(--text-muted);
+  font-size: 13px;
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+}
+
+.tocLink:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sectionHeading {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.doneCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: var(--font-mono);
+}
+
+.sectionNote {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.exercisesList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}

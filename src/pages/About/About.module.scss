@@ -1,0 +1,184 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stepCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: border-color 0.15s ease;
+}
+
+.stepCard:hover {
+  border-color: var(--accent);
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.stepBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.stepTitle {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.stepText {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.facts {
+  margin: 0;
+  padding: 0 0 0 20px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.facts li {
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.techList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 767px) {
+  .techList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.techCard {
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.techName {
+  color: var(--accent);
+  font-size: 14px;
+  font-family: var(--font-mono);
+}
+
+.techRole {
+  color: var(--text-faint);
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.primaryBtn {
+  background: var(--accent);
+  color: #fff;
+}
+
+.primaryBtn:hover {
+  background: var(--accent-strong);
+}
+
+.secondaryBtn {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.secondaryBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
